@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* -----------------First Screen------------------ */
+
+.first_screen {
+    height: 908px;
+}
+
+/* ----------------Header----------------------- */
+
+header {
+    position: relative;
+    width: 93.75%;
+    height: 60px;
+    top: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+}
