@@ -1,6 +1,6 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     list-style-type: none;
     text-decoration: none;
 }
@@ -9,12 +9,6 @@ body {
     width: 1280px;
     margin-left: auto;
     margin-right: auto;
-}
-
-/* -----------------First Screen------------------ */
-
-.first_screen {
-    height: 908px;
 }
 
 /* ----------------Header----------------------- */
@@ -29,3 +23,176 @@ header {
     display: flex;
     justify-content: space-between;
 }
+
+.logo_wrapper {
+    width: 186px;
+    height: 60px;
+}
+
+header h1 {
+    margin: 0;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 110%;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+}
+
+header p {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    align-items: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    top: 10px;
+    left: 4px;
+    position: relative;
+}
+
+.nav_menu {
+    position: relative;
+    top: 16px;
+    width: 443px;
+    height: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_menu li a {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 160%;color: #CDCDCD;
+}
+
+.nav_menu li a:hover {
+    color: #FAFAFA;
+    border-bottom: 3px solid #FAFAFA;
+}
+
+.highlight {
+    color: #FAFAFA;
+    border-bottom: 3px solid #FAFAFA;
+}
+
+/* -----------------------------First Screen--------------------------- */
+
+.first_screen {
+    height: 908px;
+    background: url(/assets/images/start-screen-gradient-background.png);
+}
+
+.first_screen_content {
+    position: relative;
+    width: 1200px;
+    height: 728px;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: bottom;
+    top: 120px;
+    display: flex;
+}
+
+.first_screen_text {
+    position: relative;
+    top: 163px;
+}
+
+.first_screen_text h2 {
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin-bottom: 42px;
+}
+
+.first_screen_text p {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 160%;
+    color: #CDCDCD;
+    margin-bottom: 41px;
+}
+
+.first_screen_text button {
+    width: 207px;
+    height: 52px;
+    background: #F1CDB3;
+    border-radius: 100px;
+    border: none;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+}
+
+.first_screen_content img {
+    position: relative;
+    left: 43px;
+}
+
+/* -------------------------About----------------------------------- */
+
+.about {
+    height: 588px;
+    padding-top: 80px;
+}
+
+.about_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.about_content img {
+    margin-right: 60px;
+}
+
+.about_text {
+    width: 430px;
+    height: 380px;
+    margin-left: 60px;
+    margin-top: 14px;    
+}
+
+.about_text h2 {
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+.about_text p {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 160%;
+    color: #4C4C4C;
+    margin-top: 25px;
+}
+
+/* -----------------------Pets-------------------------------- */
+
+.pets {
+    width: 877px;
+}
+
