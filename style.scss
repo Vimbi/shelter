@@ -1,3 +1,20 @@
+$color-primary-color: #F1CDB3;
+$color-primary-light: #fddcc4;
+
+$color-light-s: #fafafa;
+$color-light-l: #f6f6f6;
+$color-light-xl: #ffffff;
+
+$color-dark-s: #cdcdcd;
+$color-dark-m: #b2b2b2;
+$color-dark-l: #545454;
+$color-dark-xl: #4c4c4c;
+$color-dark-2xl: #444444;
+$color-dark-3xl: #292929;
+
+$start-screen-gradient-background: url(/assets/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+$footer-gradient-background: url(/assets/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+
 * {
     margin: 0;
     padding: 0;
@@ -11,8 +28,84 @@ body {
     margin: 0 auto;
 }
 
+@mixin h2 {
+    font: {
+        family: Georgia;
+        size: 2.75rem;
+        weight: normal;
+    }
+    line-height: 130%;
+}
+
+@mixin h3 {
+    font: {
+        family: Georgia;
+        weight: normal;
+        size: 2.1875rem;        
+    }
+    line-height: 130%;
+    letter-spacing: 0.06em;
+}
+
+@mixin h4 {
+    font: {
+        family: Georgia;
+        weight: normal;
+        size: 1.25rem;        
+    }
+    line-height: 115%;
+    letter-spacing: 0.06em;
+}
+
+@mixin h5 {
+    font: {
+        family: Georgia;
+        weight: normal;
+        size: 0.9375rem;        
+    }
+    line-height: 110%;
+    letter-spacing: 0.06em;
+}
+
+@mixin paragraph-l {
+    font: {
+        family: Arial;
+        size: 0.9375rem;
+    }
+    line-height: 160%;
+}
+
+@mixin paragraph-s {
+    font: {
+        family: Arial;
+        weight: normal;
+        size: 0.75rem;
+        style: italic;
+    }
+    line-height: 150%;
+}
+
+@mixin logo_title {
+    font: {
+        family: Georgia;
+        weight: normal;
+        size: 2rem;
+    }
+    line-height: 110%;
+    letter-spacing: 0.06em;
+}
+
+@mixin logo_subtitle {
+    font: {
+        family: Arial;
+        size: 0.8125rem;
+    }
+    line-height: 110%;
+    letter-spacing: 0.1em;
+}
+
 .first_screen {
-    background: url(/assets/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+    background: $start-screen-gradient-background;
 }
 
 /* ----------------Header------------------------*/
@@ -32,26 +125,19 @@ header {
 .logo_wrapper {
     display: flex;
     flex-direction: column;
-}
 
-header h1 {
-    margin: 0;
-    font-family: Georgia;
-    font-weight: normal;
-    font-size: 2rem;
-    line-height: 110%;
-    letter-spacing: 0.06em;
-    color: #F1CDB3;
-}
+    .logo_title {
+        margin: 0;
+        @include logo_title;
+        color: $color-primary-color;
+    }
 
-header p {
-    font-family: Arial;
-    font-size: 0.8125rem;
-    line-height: 110%;
-    letter-spacing: 0.1em;
-    color: #FFFFFF;
-    margin-top: 0.625rem;
-    text-align: center;
+    .logo_subtitle {
+        @include logo_subtitle;
+        color: $color-light-xl;
+        margin-top: 0.625rem;
+        text-align: center;
+    }
 }
 
 .nav_wrapper {
@@ -103,7 +189,7 @@ header p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-bottom: 5,125rem;
+    padding-bottom: 5.125rem;
     max-width: 28.75rem;
 }
 
