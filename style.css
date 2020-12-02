@@ -74,7 +74,7 @@ header {
           align-items: center;
 }
 
-.nav_menu {
+.nav_wrapper .nav_menu {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -84,13 +84,13 @@ header {
           justify-content: space-between;
 }
 
-.nav_menu li {
+.nav_wrapper .nav_menu li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.nav_menu li a {
+.nav_wrapper .nav_menu li a {
   font-family: Arial;
   font-size: 0.9375rem;
   line-height: 160%;
@@ -98,12 +98,12 @@ header {
   font-weight: normal;
 }
 
-.nav_menu a:hover {
+.nav_wrapper .nav_menu li a:hover {
   color: #FAFAFA;
   border-bottom: 3px solid #F1CDB3;
 }
 
-#active_link {
+.nav_wrapper .nav_menu li #active_link {
   color: #FAFAFA;
   border-bottom: 3px solid #F1CDB3;
 }
@@ -121,7 +121,7 @@ header {
   padding-top: 11.25rem;
 }
 
-.first_screen_text {
+.first_screen_content .first_screen_text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -136,7 +136,7 @@ header {
   max-width: 28.75rem;
 }
 
-.first_screen_text h2 {
+.first_screen_content .first_screen_text .first_screen_text h2 {
   font-family: Georgia;
   font-size: 2.75rem;
   line-height: 130%;
@@ -145,7 +145,7 @@ header {
   font-weight: normal;
 }
 
-.first_screen_text p {
+.first_screen_content .first_screen_text .first_screen_text p {
   margin-top: 2.625rem;
   font-family: Arial;
   font-size: 0.9375rem;
@@ -156,7 +156,7 @@ header {
   color: #FFFFFF;
 }
 
-.first_screen_button {
+.first_screen_content .first_screen_text .first_screen_button {
   margin-top: 2.5625rem;
   width: 12.9375rem;
   padding: 0.9375rem;
