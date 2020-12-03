@@ -136,7 +136,7 @@ header {
   max-width: 28.75rem;
 }
 
-.first_screen_content .first_screen_text .first_screen_text h2 {
+.first_screen_content .first_screen_text h2 {
   font-family: Georgia;
   font-size: 2.75rem;
   line-height: 130%;
@@ -145,7 +145,7 @@ header {
   font-weight: normal;
 }
 
-.first_screen_content .first_screen_text .first_screen_text p {
+.first_screen_content .first_screen_text p {
   margin-top: 2.625rem;
   font-family: Arial;
   font-size: 0.9375rem;
@@ -168,6 +168,59 @@ header {
   line-height: 130%;
   letter-spacing: 0.06em;
   color: #292929;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  max-width: 75rem;
+  padding-top: 5rem;
+  padding-bottom: 6.25rem;
+}
+
+.about .about_content {
+  padding-left: 10.9375rem;
+  padding-right: 10.9375rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about .about_content .about_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 26.875rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about .about_content .about_text h2 {
+  font-family: Georgia;
+  font-weight: normal;
+  font-size: 2.1875rem;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+.about .about_content .about_text p {
+  font-family: Arial;
+  font-size: 0.9375rem;
+  line-height: 160%;
+  color: #4c4c4c;
+  margin-top: 1.5625rem;
 }
 
 /* ----------------Header-----------------------

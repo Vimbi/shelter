@@ -190,7 +190,7 @@ header {
         padding-bottom: 5.125rem;
         max-width: 28.75rem;
 
-        .first_screen_text h2 {
+        & h2 {
             font-family: Georgia;
             font-size: 2.75rem;
             line-height: 130%;
@@ -199,7 +199,7 @@ header {
             font-weight: normal;
         }
         
-        .first_screen_text p {
+        & p {
             margin-top: 2.625rem;
             font-family: Arial;
             font-size: 0.9375rem;
@@ -224,6 +224,41 @@ header {
     }
 }
 
+// ------------------About-----------------------
+
+.about {
+    display: flex;   
+    margin: 0 auto;
+    max-width: 75rem;
+    padding-top: 5rem;
+    padding-bottom: 6.25rem;
+
+    .about_content {
+        padding-left: 10.9375rem;
+        padding-right: 10.9375rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .about_text {
+            display: flex;
+            flex-direction: column;
+            max-width: 26.875rem;
+            justify-content: center;
+
+            h2 {
+                @include h3;
+                color: $color-dark-l;
+            }
+        
+            p {
+                @include paragraph-l;
+                color: $color-dark-xl;
+                margin-top: 1.5625rem;
+            }
+        }
+    }
+}
 
 
 /* ----------------Header-----------------------
