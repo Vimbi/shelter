@@ -163,15 +163,16 @@ header {
 .first_screen_content .first_screen_text .first_screen_button {
   margin-top: 4.1rem;
   width: 20.7rem;
-  padding: 1.5rem;
-  border: none;
-  border-radius: 10rem;
-  background: #F1CDB3;
-  font-family: Georgia;
+  white-space: nowrap;
+  padding: 1.5rem 4.5rem;
   font-size: 1.7rem;
+  background-color: #F1CDB3;
+  border-radius: 10rem;
   line-height: 130%;
-  letter-spacing: 0.102rem;
+  letter-spacing: 0.108rem;
+  border: none;
   color: #292929;
+  font-family: Georgia;
 }
 
 .about {
@@ -269,7 +270,13 @@ header {
   display: block;
 }
 
-.pets .wrapper .pets_wrapper .pets_card {
+.pets .wrapper .pets_wrapper .pets_cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pets .wrapper .pets_wrapper .pets_cards .pets_card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,6 +290,29 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.pets .wrapper .pets_wrapper .pets_cards .pets_card-image {
+  width: 100%;
+}
+
+.pets .wrapper .pets_wrapper .pets_cards .pets_card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pets .wrapper .pets_wrapper .pets_cards .pets_card-content .pets_card-title {
+  font-family: Georgia;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 115%;
+  letter-spacing: 0.12rem;
+  letter-spacing: 0;
 }
 
 .pets .wrapper .pets_wrapper .slider_button {
@@ -308,7 +338,6 @@ header {
 }
 
 .pets .wrapper .pets_wrapper .pets_button {
-  max-width: 26.1rem;
   padding: 1.5rem 4.5rem;
   border-radius: 10rem;
   border: none;

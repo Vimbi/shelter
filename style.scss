@@ -115,6 +115,18 @@ body {
         padding: 1.9rem;
 }
 
+@mixin button($color) {    
+    padding: 1.5rem 4.5rem;
+    font-size: 1.7rem;
+    background-color: $color;
+    border-radius: 10rem;
+    line-height: 130%;
+    letter-spacing: 0.108rem;
+    border: none;    
+    color: $color-dark-3xl;    
+    font-family: Georgia; 
+}
+
 .first_screen {
     background: $start-screen-gradient-background;
 }
@@ -222,15 +234,8 @@ header {
         .first_screen_button {
             margin-top: 4.1rem;
             width: 20.7rem;
-            padding: 1.5rem;
-            border: none;
-            border-radius: 10rem;
-            background: #F1CDB3;
-            font-family: Georgia;
-            font-size: 1.7rem;
-            line-height: 130%;
-            letter-spacing: 0.102rem;
-            color: #292929;
+            white-space: nowrap;
+            @include button($color-primary-color);
         }
     }
 }
@@ -299,11 +304,33 @@ header {
                 }
             }
 
-            .pets_card {
+            .pets_cards {
                 display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+
+                .pets_card {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    &-image {
+                        width: 100%;
+                    }
+
+                    &-content {
+                        display: flex;
+                        flex-direction: column;
+                        
+                        .pets_card-title {
+                            @include h4;
+                            letter-spacing: 0;
+                        }
+
+                        .pets_card-button {
+                        
+                        }
+                    }                    
+                }
             }
     
             .slider_button {
@@ -320,7 +347,6 @@ header {
 
 
             .pets_button {
-                max-width: 26.1rem;
                 padding: 1.5rem 4.5rem;
                 border-radius: 10rem;
                 border: none;
