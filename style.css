@@ -54,7 +54,7 @@ header {
   font-weight: normal;
   font-size: 3.2rem;
   line-height: 110%;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.192rem;
   color: #F1CDB3;
 }
 
@@ -62,7 +62,7 @@ header {
   font-family: Arial;
   font-size: 1.3rem;
   line-height: 110%;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.13rem;
   color: #ffffff;
   margin-top: 1rem;
   text-align: center;
@@ -170,7 +170,7 @@ header {
   font-family: Georgia;
   font-size: 1.7rem;
   line-height: 130%;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.102rem;
   color: #292929;
 }
 
@@ -215,7 +215,7 @@ header {
   font-weight: normal;
   font-size: 3.5rem;
   line-height: 130%;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.21rem;
   color: #545454;
 }
 
@@ -259,7 +259,7 @@ header {
   font-weight: normal;
   font-size: 3.5rem;
   line-height: 130%;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.21rem;
   color: #545454;
   max-width: 40rem;
   text-align: center;
@@ -267,6 +267,22 @@ header {
 
 .pets .wrapper .pets_wrapper .pets_title span {
   display: block;
+}
+
+.pets .wrapper .pets_wrapper .pets_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .pets .wrapper .pets_wrapper .slider_button {

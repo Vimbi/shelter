@@ -48,7 +48,7 @@ body {
         size: 3.5rem;        
     }
     line-height: 130%;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.21rem;
 }
 
 @mixin h4 {
@@ -58,7 +58,7 @@ body {
         size: 2rem;        
     }
     line-height: 115%;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.12rem;
 }
 
 @mixin h5 {
@@ -68,7 +68,7 @@ body {
         size: 1.5rem;        
     }
     line-height: 110%;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.09rem;
 }
 
 @mixin paragraph-l {
@@ -96,7 +96,7 @@ body {
         size: 3.2rem;
     }
     line-height: 110%;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.192rem;
 }
 
 @mixin logo_subtitle {
@@ -105,7 +105,7 @@ body {
         size: 1.3rem;
     }
     line-height: 110%;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.13rem;
 }
 
 @mixin slider_button {
@@ -229,7 +229,7 @@ header {
             font-family: Georgia;
             font-size: 1.7rem;
             line-height: 130%;
-            letter-spacing: 0.06em;
+            letter-spacing: 0.102rem;
             color: #292929;
         }
     }
@@ -297,6 +297,13 @@ header {
                 span {
                     display: block;
                 }
+            }
+
+            .pets_card {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
             }
     
             .slider_button {
