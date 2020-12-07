@@ -121,10 +121,22 @@ body {
 }
 
 @mixin slider_button {
-    border: 0.2rem solid $color-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.2rem;
+    height: 5.2rem;
+    box-shadow: inset 0 0 0 0.2rem $color-primary;
     border-radius: 100%;
     background: none;
     padding: 1.9rem;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color-primary-light;
+        box-shadow: none;
+    }
 }
 
 @mixin button {
@@ -155,7 +167,7 @@ body {
     box-shadow: inset 0 0 0 2px $color-primary;
 
     &:hover {
-        box-shadow: 0 0 0 2px $color-primary-light;
+        box-shadow: none;
     }
 }
 
@@ -336,49 +348,58 @@ header {
                 }
             }
 
-            .pets_cards {
+            .pets_content {
                 display: flex;
+                align-items: center;
 
-                .pets_card {
+                .pets_cards {
                     display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-
-                    &-image {
-                        width: 100%;
-                    }
-
-                    &-content {
+                    padding: 6rem 0.8rem;
+    
+                    .pets_card {
                         display: flex;
                         flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 0.9rem;
+                        margin: 0 4.5rem;
+                        cursor: pointer;
 
-                        .pets_card-title {
-                            @include h4;
-                            letter-spacing: 0;
+                        
+    
+                        &-image {
+                            width: 100%;
                         }
-
-                        .pets_card-button {
-                            @include button_secondary;
+    
+                        &-content {
+                            display: flex;
+                            flex-direction: column;
+                            padding-bottom: 3rem;
+                            align-items: center;
+    
+                            .pets_card-title {
+                                @include h4;
+                                text-align: center;
+                                margin: 3rem 0;
+                            }
+    
+                            .pets_card-button {
+                                @include button_secondary;
+                            }
                         }
                     }
                 }
+    
+                .slider_button {
+                    @include slider_button;
+                }
+    
+                .slider_button_reverted {
+                    transform: rotate(180deg);
+                    @include slider_button;
+                }
             }
-
-            .slider_button {
-                @include slider_button;
-            }
-
-            .slider_button_reverted {
-                transform: rotate(180deg);
-                @include slider_button;
-            }
-
-            .pets_content {
-                display: flex;
-            }
-
-
+    
             .pets_button {
                 @include button_primary;
             }
