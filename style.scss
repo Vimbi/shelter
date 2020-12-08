@@ -19,6 +19,8 @@ $footer-gradient-background: url(/assets/noise_transparent@2x.png),
 radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%),
 #211F20;
 
+$card_hover: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+
 :root {
     font-size: 10px;
 }
@@ -132,6 +134,7 @@ body {
     padding: 1.9rem;
     border: none;
     cursor: pointer;
+    outline: none;
 
     &:hover {
         background-color: $color-primary-light;
@@ -324,7 +327,8 @@ header {
 
 .pets {
     padding-top: 8rem;
-    padding-bottom: 10rem;
+    padding-bottom: 10rem;    
+    background-color: $color-light-l;
 
     .wrapper {
         display: flex;
@@ -365,7 +369,9 @@ header {
                         margin: 0 4.5rem;
                         cursor: pointer;
 
-                        
+                        &:hover {
+                            box-shadow: $card_hover;
+                        }
     
                         &-image {
                             width: 100%;
@@ -406,6 +412,79 @@ header {
         }
     }
 }
+
+// ---------------Help---------------------------
+.help {
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+
+    .wrapper {        
+        flex-direction: column;
+
+        display: flex;
+        margin: 0 auto;
+        max-width: 120rem;
+
+        .help_title {
+            @include h3;
+            color: $color-dark-l;
+            text-align: center;
+
+            span {
+                display: block;
+            }
+        }
+
+        .help_content {
+            margin-top: 6rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5.5rem 12rem;
+            align-items: center;
+            justify-content: center;
+
+            .help_item {
+                display: flex;
+                flex-direction: column;
+
+                &-title {
+                    margin-top: 3rem;
+                    @include h4;
+                    color: $color-dark-l;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+// ----------------Donation--------------------
+
+.donation {
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+
+    .donation_wrapper {
+        display: flex;
+        margin: 0 auto;
+        max-width: 120rem;
+        justify-content: center;
+        column-gap: 3rem;
+        align-items: center;
+
+        .donation_content {
+            display: flex;
+            flex-direction: column;
+            max-width: 28.2rem;
+
+            .donation_title {
+                @include h3;
+                color: $color-dark-l;
+            }
+        }
+    }
+}
+
 
 /* ----------------Header-----------------------
 
