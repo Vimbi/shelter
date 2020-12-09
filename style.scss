@@ -94,7 +94,7 @@ body {
     font: {
         family: Arial;
         weight: normal;
-        size: 12rem;
+        size: 1.2rem;
         style: italic;
     }
 
@@ -464,22 +464,58 @@ header {
     padding-top: 8rem;
     padding-bottom: 10rem;
 
-    .donation_wrapper {
+    &_wrapper {
         display: flex;
         margin: 0 auto;
         max-width: 120rem;
         justify-content: center;
-        column-gap: 3rem;
-        align-items: center;
+
+        .img_wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
         .donation_content {
+            margin-left: 3rem;
             display: flex;
             flex-direction: column;
-            max-width: 28.2rem;
+            max-width: 38rem;
+            align-items: flex-start;
 
             .donation_title {
                 @include h3;
                 color: $color-dark-l;
+
+                span {
+                    display: block;
+                }
+            }
+
+            .donation_subtitle {
+                margin-top: 2rem;
+                color: $color-dark-l;
+                @include h5;
+            }
+
+            .donation_payment {
+                @include button_primary;
+                margin-top: 2rem;
+                padding: 1rem 1.5rem;
+                border-radius: 1rem;
+                display: flex;
+
+                .donation_card-number {
+                    padding-left: 1.5rem;
+                    @include h4;
+                    color: $color-dark-l;
+                }
+            }
+
+            .donation_description {
+                margin-top: 2rem;
+                color: $color-dark-m;
+                @include paragraph-s;
             }
         }
     }
