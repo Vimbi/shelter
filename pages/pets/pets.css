@@ -1,0 +1,410 @@
+:root {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ----------------Header------------------------*/
+header {
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.header_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  max-width: 120rem;
+  min-height: 12rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3rem 0;
+  z-index: 2;
+}
+
+.logo_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.logo_wrapper .logo_title {
+  margin: 0;
+  font-family: Georgia;
+  font-weight: normal;
+  font-size: 3.2rem;
+  line-height: 110%;
+  letter-spacing: 0.192rem;
+  color: #545454;
+}
+
+.logo_wrapper .logo_subtitle {
+  font-family: Arial;
+  font-size: 1.3rem;
+  line-height: 115%;
+  letter-spacing: 0.13rem;
+  color: #292929;
+  margin-top: 1rem;
+  margin-left: 0.4rem;
+}
+
+.nav_wrapper {
+  width: 36.916%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav_wrapper .nav_menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav_wrapper .nav_menu li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav_wrapper .nav_menu li a {
+  font-family: Arial;
+  font-size: 1.5rem;
+  line-height: 160%;
+  color: #545454;
+  font-weight: normal;
+}
+
+.nav_wrapper .nav_menu li a:hover {
+  color: #292929;
+  border-bottom: 0.3rem solid #F1CDB3;
+}
+
+.nav_wrapper .nav_menu li #active_link {
+  color: #545454;
+  border-bottom: 0.3rem solid #F1CDB3;
+}
+
+main {
+  padding-top: 8rem;
+  padding-bottom: 10rem;
+  background: #f6f6f6;
+}
+
+main .main_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
+main .main_wrapper .main_pets-title {
+  font-family: Georgia;
+  font-weight: normal;
+  font-size: 3.5rem;
+  line-height: 130%;
+  letter-spacing: 0.21rem;
+  color: #545454;
+  text-align: center;
+}
+
+main .main_wrapper .main_pets-title span {
+  display: block;
+}
+
+main .main_wrapper .main_pets-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1.5rem 0;
+  gap: 3rem 4rem;
+  margin: 4.5rem 0;
+}
+
+main .main_wrapper .main_pets-cards .pets_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.9rem;
+  cursor: pointer;
+}
+
+main .main_wrapper .main_pets-cards .pets_card:hover {
+  -webkit-box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+          box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+}
+
+main .main_wrapper .main_pets-cards .pets_card-image {
+  width: 100%;
+}
+
+main .main_wrapper .main_pets-cards .pets_card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .main_wrapper .main_pets-cards .pets_card-content .pets_card-title {
+  font-family: Georgia;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 115%;
+  letter-spacing: 0.12rem;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+main .main_wrapper .main_pets-cards .pets_card-content .pets_card-button {
+  padding: 1.5rem 4.5rem;
+  font-size: 1.7rem;
+  border-radius: 10rem;
+  line-height: 130%;
+  letter-spacing: 0.108rem;
+  border: none;
+  color: #292929;
+  font-family: Georgia;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+  -webkit-box-shadow: inset 0 0 0 2px #F1CDB3;
+          box-shadow: inset 0 0 0 2px #F1CDB3;
+}
+
+main .main_wrapper .main_pets-cards .pets_card-content .pets_card-button:hover {
+  background-color: #fddcc4;
+}
+
+main .main_wrapper .main_pets-cards .pets_card-content .pets_card-button:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+main .main_wrapper .slider_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 5.2rem;
+  height: 5.2rem;
+  -webkit-box-shadow: inset 0 0 0 0.2rem #F1CDB3;
+          box-shadow: inset 0 0 0 0.2rem #F1CDB3;
+  border-radius: 100%;
+  background: none;
+  padding: 1.9rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+main .main_wrapper .slider_button:hover {
+  background-color: #fddcc4;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+main .main_wrapper .slider_button_reverted {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 5.2rem;
+  height: 5.2rem;
+  -webkit-box-shadow: inset 0 0 0 0.2rem #F1CDB3;
+          box-shadow: inset 0 0 0 0.2rem #F1CDB3;
+  border-radius: 100%;
+  background: none;
+  padding: 1.9rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+main .main_wrapper .slider_button_reverted:hover {
+  background-color: #fddcc4;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+footer {
+  background: url(/assets/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+}
+
+footer .footer_wrapper {
+  padding: 4rem 4rem 0 4rem;
+}
+
+footer .footer_wrapper-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
+footer .footer_wrapper-content .column_one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 6rem;
+}
+
+footer .footer_wrapper-content .column_one-title {
+  font-family: Georgia;
+  font-weight: normal;
+  font-size: 3.5rem;
+  line-height: 130%;
+  letter-spacing: 0.21rem;
+  color: #ffffff;
+}
+
+footer .footer_wrapper-content .column_one-title span {
+  display: block;
+}
+
+footer .footer_wrapper-content .column_one .email, footer .footer_wrapper-content .column_one .telephone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4rem;
+}
+
+footer .footer_wrapper-content .column_one .email .email_text, footer .footer_wrapper-content .column_one .email .telephone_number, footer .footer_wrapper-content .column_one .telephone .email_text, footer .footer_wrapper-content .column_one .telephone .telephone_number {
+  font-family: Georgia;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 115%;
+  letter-spacing: 0.12rem;
+  color: #F1CDB3;
+  margin-left: 2rem;
+}
+
+footer .footer_wrapper-content .column_two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 6rem;
+  margin-left: 16rem;
+}
+
+footer .footer_wrapper-content .column_two-title {
+  font-family: Georgia;
+  font-weight: normal;
+  font-size: 3.5rem;
+  line-height: 130%;
+  letter-spacing: 0.21rem;
+  color: #ffffff;
+  margin-bottom: 0.2rem;
+}
+
+footer .footer_wrapper-content .column_two-title span {
+  display: block;
+}
+
+footer .footer_wrapper-content .column_two .boston_address, footer .footer_wrapper-content .column_two .london_address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3.2rem;
+}
+
+footer .footer_wrapper-content .column_two .boston_address .london_address-text, footer .footer_wrapper-content .column_two .boston_address .boston_address-text, footer .footer_wrapper-content .column_two .london_address .london_address-text, footer .footer_wrapper-content .column_two .london_address .boston_address-text {
+  font-family: Georgia;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 115%;
+  letter-spacing: 0.12rem;
+  color: #F1CDB3;
+  margin-left: 2rem;
+}
+
+footer .footer_wrapper-content .column_two .boston_address .london_address-text span, footer .footer_wrapper-content .column_two .boston_address .boston_address-text span, footer .footer_wrapper-content .column_two .london_address .london_address-text span, footer .footer_wrapper-content .column_two .london_address .boston_address-text span {
+  display: block;
+}
+
+footer .footer_wrapper-content .footer_puppy {
+  margin-left: 16.75rem;
+}
+/*# sourceMappingURL=pets.css.map */
