@@ -230,7 +230,18 @@ main .main_wrapper .main_pets-cards .pets_card-content .pets_card-button:hover {
           box-shadow: none;
 }
 
-main .main_wrapper .slider_button {
+main .main_wrapper .main_paginations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+}
+
+main .main_wrapper .main_paginations .paginations_button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -250,15 +261,44 @@ main .main_wrapper .slider_button {
   border: none;
   cursor: pointer;
   outline: none;
+  font-family: Georgia;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 115%;
+  letter-spacing: 0.12rem;
 }
 
-main .main_wrapper .slider_button:hover {
+main .main_wrapper .main_paginations .paginations_button:hover {
   background-color: #fddcc4;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-main .main_wrapper .slider_button_reverted {
+main .main_wrapper .main_paginations .paginations_button-active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #F1CDB3;
+  cursor: default;
+}
+
+main .main_wrapper .main_paginations .paginations_button-active:hover {
+  background-color: #F1CDB3;
+}
+
+main .main_wrapper .main_paginations .paginations_button:disabled {
+  -webkit-box-shadow: inset 0 0 0 0.2rem #cdcdcd;
+          box-shadow: inset 0 0 0 0.2rem #cdcdcd;
+  color: #cdcdcd;
+}
+
+main .main_wrapper .main_paginations .paginations_button:disabled:hover {
+  -webkit-box-shadow: inset 0 0 0 0.2rem #cdcdcd;
+          box-shadow: inset 0 0 0 0.2rem #cdcdcd;
+  background-color: transparent;
+  cursor: default;
+}
+
+main .main_wrapper .main_paginations .slider_button_reverted {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   display: -webkit-box;
@@ -282,7 +322,7 @@ main .main_wrapper .slider_button_reverted {
   outline: none;
 }
 
-main .main_wrapper .slider_button_reverted:hover {
+main .main_wrapper .main_paginations .slider_button_reverted:hover {
   background-color: #fddcc4;
   -webkit-box-shadow: none;
           box-shadow: none;
