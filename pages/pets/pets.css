@@ -68,7 +68,7 @@ header {
 }
 
 .nav_wrapper {
-  width: 36.916%;
+  width: 44.3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,6 +112,7 @@ header {
 }
 
 main {
+  width: 100%;
   padding-top: 8rem;
   padding-bottom: 10rem;
   background: #f6f6f6;

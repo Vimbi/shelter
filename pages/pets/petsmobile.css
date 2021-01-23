@@ -1,0 +1,58 @@
+/* ----------------Header------------------------*/
+header {
+  position: fixed;
+}
+
+.header_wrapper {
+  max-width: 70.8rem;
+}
+
+main {
+  padding-top: 20rem;
+  padding-bottom: 7rem;
+  min-height: 185.3rem;
+}
+
+main .main_wrapper {
+  max-width: 70.8rem;
+}
+
+main .main_wrapper .main_pets-cards {
+  margin: 0 auto;
+  max-width: 58rem;
+  padding: 0;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+main .main_wrapper .main_pets-cards .medium_excess {
+  display: none;
+}
+
+footer .footer_wrapper {
+  padding: 3rem 3rem 0 3rem;
+}
+
+footer .footer_wrapper .footer_wrapper-content {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  max-width: 70.8rem;
+}
+
+footer .footer_wrapper .footer_wrapper-content .column_one {
+  margin-left: 3.4rem;
+  margin-bottom: 0rem;
+}
+
+footer .footer_wrapper .footer_wrapper-content .column_two {
+  margin-left: 6rem;
+  margin-bottom: 0rem;
+}
+
+footer .footer_wrapper .footer_wrapper-content .footer_puppy {
+  margin: 6.5rem auto 0 auto;
+}
+/*# sourceMappingURL=petsmobile.css.map */
