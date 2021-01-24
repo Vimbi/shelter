@@ -241,6 +241,10 @@ header {
             }
         }
     }
+
+    .burger {
+        display: none;
+    }
 }
 
 // -----------------Pets---------------------------
@@ -368,7 +372,7 @@ footer {
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-end;
-                margin-bottom: 6rem;
+                margin-bottom: 6rem;                
     
                 &-title {
                     @include h3;
@@ -376,6 +380,10 @@ footer {
     
                     span {
                         display: block;
+                    }
+
+                    .mobile_span {
+                        display: none;
                     }
                 }
 
@@ -397,7 +405,7 @@ footer {
                 flex-direction: column;
                 justify-content: flex-end;
                 margin-bottom: 6rem;
-                margin-left: 16rem;
+                margin-left: 16rem;                
 
                 &-title {
                     @include h3;
@@ -406,6 +414,10 @@ footer {
     
                     span {
                         display: block;
+                    }
+
+                    .mobile_span {
+                        display: none;
                     }
                 }
 
