@@ -1,0 +1,708 @@
+$color-primary: #F1CDB3;
+$color-primary-light: #fddcc4;
+
+$color-light-s: #fafafa;
+$color-light-l: #f6f6f6;
+$color-light-xl: #ffffff;
+
+$color-dark-s: #cdcdcd;
+$color-dark-m: #b2b2b2;
+$color-dark-l: #545454;
+$color-dark-xl: #4c4c4c;
+$color-dark-2xl: #444444;
+$color-dark-3xl: #292929;
+
+$start-screen-gradient-background: url(/assets/noise_transparent@2x.png),
+radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%),
+#211F20;
+$footer-gradient-background: url(/assets/noise_transparent@2x.png),
+radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%),
+#211F20;
+
+$card_hover: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+
+:root {
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+
+@mixin h2 {
+    font: {
+        family: Georgia;
+        size: 4.4rem;
+        weight: normal;
+    }
+
+    line-height: 130%;
+}
+
+@mixin h3 {
+    font: {
+        family: Georgia;
+        weight: normal;
+        size: 3.5rem;
+    }
+
+    line-height: 130%;
+    letter-spacing: 0.21rem;
+}
+
+@mixin h4 {
+    font: {
+        family: Georgia;
+        weight: normal;
+        size: 2rem;
+    }
+
+    line-height: 115%;
+    letter-spacing: 0.12rem;
+}
+
+@mixin h5 {
+    font: {
+        family: Georgia;
+        weight: normal;
+        size: 1.5rem;
+    }
+
+    line-height: 110%;
+    letter-spacing: 0.09rem;
+}
+
+@mixin paragraph-l {
+    font: {
+        family: Arial;
+        size: 1.5rem;
+    }
+
+    line-height: 160%;
+}
+
+@mixin paragraph-s {
+    font: {
+        family: Arial;
+        weight: normal;
+        size: 1.2rem;
+        style: italic;
+    }
+
+    line-height: 150%;
+}
+
+@mixin logo_title {
+    font: {
+        family: Georgia;
+        weight: normal;
+        size: 3.2rem;
+    }
+
+    line-height: 110%;
+    letter-spacing: 0.192rem;
+}
+
+@mixin logo_subtitle {
+    font: {
+        family: Arial;
+        size: 1.3rem;
+    }
+
+    line-height: 110%;
+    letter-spacing: 0.13rem;
+}
+
+@mixin slider_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.2rem;
+    height: 5.2rem;
+    box-shadow: inset 0 0 0 0.2rem $color-primary;
+    border-radius: 100%;
+    background: none;
+    padding: 1.9rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+
+    &:hover {
+        background-color: $color-primary-light;
+        box-shadow: none;
+    }
+}
+
+@mixin button {
+    padding: 1.5rem 4.5rem;
+    font-size: 1.7rem;
+    border-radius: 10rem;
+    line-height: 130%;
+    letter-spacing: 0.108rem;
+    border: none;
+    color: $color-dark-3xl;
+    font-family: Georgia;
+    cursor: pointer;
+    outline: none;
+
+    &:hover {
+        background-color: $color-primary-light;
+    }
+}
+
+@mixin button_primary {
+    @include button;
+    background-color: $color-primary;
+}
+
+@mixin button_secondary {
+    @include button;
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px $color-primary;
+
+    &:hover {
+        box-shadow: none;
+    }
+}
+
+.first_screen {
+    background: $start-screen-gradient-background;
+}
+
+/* ----------------Header------------------------*/
+header {
+    width: 100%;
+    position: absolute;
+    top: 6rem;
+}
+
+.header_wrapper {
+    display: flex;
+    margin: 0 auto;
+    max-width: 120rem;
+    justify-content: space-between;
+}
+
+.logo_wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .logo_title {
+        margin: 0;
+        @include logo_title;
+        color: $color-primary;
+    }
+
+    .logo_subtitle {
+        @include logo_subtitle;
+        color: $color-light-xl;
+        margin-top: 1rem;
+        text-align: center;
+    }
+}
+
+.nav_wrapper {
+    width: 36.916%;
+    display: flex;
+    align-items: center;
+
+    .nav_menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        & li {
+            display: flex;
+
+            & a {
+                font-family: Arial;
+                font-size: 1.5rem;
+                line-height: 160%;
+                color: #CDCDCD;
+                font-weight: normal;
+            }
+
+            & a:hover {
+                color: #FAFAFA;
+                border-bottom: 0.3rem solid #F1CDB3;
+            }
+
+            #active_link {
+                color: #FAFAFA;
+                border-bottom: 0.3rem solid #F1CDB3;
+            }
+        }
+    }
+}
+
+/* -----------First screen content------------------------  */
+
+.first_screen_content {
+    display: flex;
+    margin: 0 auto;
+    max-width: 120rem;
+    justify-content: space-between;
+    padding-top: 18rem;
+
+    .first_screen_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 8.2rem;
+        max-width: 46rem;
+
+        & h2 {
+            font-family: Georgia;
+            font-size: 4.4rem;
+            line-height: 130%;
+            color: #FFFFFF;
+            max-width: 31rem;
+            font-weight: normal;
+        }
+
+        & p {
+            margin-top: 4.2rem;
+            font-family: Arial;
+            font-size: 1.5rem;
+            line-height: 160%;
+            align-items: center;
+            color: #FFFFFF;
+        }
+
+        .first_screen_button {
+            margin-top: 4.1rem;
+            width: 20.7rem;
+            white-space: nowrap;
+            @include button_primary;
+        }
+    }
+}
+
+// ------------------About-----------------------
+
+.about {
+    display: flex;
+    margin: 0 auto;
+    max-width: 120rem;
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+
+    .about_content {
+        padding-left: 17.5rem;
+        padding-right: 17.5rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .about_text {
+            display: flex;
+            flex-direction: column;
+            max-width: 43rem;
+            justify-content: center;
+
+            h2 {
+                @include h3;
+                color: $color-dark-l;
+            }
+
+            p {
+                @include paragraph-l;
+                color: $color-dark-xl;
+                margin-top: 2.5rem;
+            }
+        }
+    }
+}
+
+// --------------------------Pets-------------------------
+
+.pets {
+    padding-top: 8rem;
+    padding-bottom: 10rem;    
+    background-color: $color-light-l;
+
+    .wrapper {
+        display: flex;
+        margin: 0 auto;
+        max-width: 120rem;
+
+        .pets_wrapper {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+
+            .pets_title {
+                @include h3;
+                color: $color-dark-l;
+                max-width: 40rem;
+                text-align: center;
+
+                span {
+                    display: block;
+                }
+            }
+
+            .pets_content {
+                display: flex;
+                align-items: center;
+
+                .pets_cards {
+                    display: flex;
+                    padding: 6rem 0.8rem;
+    
+                    .pets_card {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 0.9rem;
+                        margin: 0 4.5rem;
+                        cursor: pointer;
+
+                        &:hover {
+                            box-shadow: $card_hover;
+                        }
+    
+                        &-image {
+                            width: 100%;
+                        }
+    
+                        &-content {
+                            display: flex;
+                            flex-direction: column;
+                            padding-bottom: 3rem;
+                            align-items: center;
+    
+                            .pets_card-title {
+                                @include h4;
+                                text-align: center;
+                                margin: 3rem 0;
+                            }
+    
+                            .pets_card-button {
+                                @include button_secondary;
+                            }
+                        }
+                    }
+                }
+    
+                .slider_button {
+                    @include slider_button;
+                }
+    
+                .slider_button_reverted {
+                    transform: rotate(180deg);
+                    @include slider_button;
+                }
+            }
+    
+            .pets_button {
+                @include button_primary;
+            }
+        }
+    }
+}
+
+// ---------------Help---------------------------
+.help {
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+
+    .wrapper {        
+        flex-direction: column;
+
+        display: flex;
+        margin: 0 auto;
+        max-width: 120rem;
+
+        .help_title {
+            @include h3;
+            color: $color-dark-l;
+            text-align: center;
+
+            span {
+                display: block;
+            }
+        }
+
+        .help_content {
+            margin-top: 6rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5.5rem 12rem;
+            align-items: center;
+            justify-content: center;
+
+            .help_item {
+                display: flex;
+                flex-direction: column;
+
+                &-title {
+                    margin-top: 3rem;
+                    @include h4;
+                    color: $color-dark-l;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+// ----------------Donation--------------------
+
+.donation {
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+
+    &_wrapper {
+        display: flex;
+        margin: 0 auto;
+        max-width: 120rem;
+        justify-content: center;
+
+        .img_wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .donation_content {
+            margin-left: 3rem;
+            display: flex;
+            flex-direction: column;
+            max-width: 38rem;
+            align-items: flex-start;
+
+            .donation_title {
+                @include h3;
+                color: $color-dark-l;
+
+                span {
+                    display: block;
+                }
+            }
+
+            .donation_subtitle {
+                margin-top: 2rem;
+                color: $color-dark-l;
+                @include h5;
+            }
+
+            .donation_payment {
+                @include button_primary;
+                margin-top: 2rem;
+                padding: 1rem 1.5rem;
+                border-radius: 1rem;
+                display: flex;
+
+                .donation_card-number {
+                    padding-left: 1.5rem;
+                    @include h4;
+                    color: $color-dark-l;
+                }
+            }
+
+            .donation_description {
+                margin-top: 2rem;
+                color: $color-dark-m;
+                @include paragraph-s;
+            }
+        }
+    }
+}
+
+
+/* ----------------Header-----------------------
+
+header {
+    position: relative;
+    width: 93.75%;
+    height: 60px;
+    top: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_wrapper {
+    width: 186px;
+    height: 60px;
+}
+
+header h1 {
+    margin: 0;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 110%;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+}
+
+header p {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    align-items: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    top: 10px;
+    left: 4px;
+    position: relative;
+}
+
+.nav_menu {
+    position: relative;
+    top: 16px;
+    width: 443px;
+    height: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_menu li a {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 160%;color: #CDCDCD;
+}
+
+.nav_menu li a:hover {
+    color: #FAFAFA;
+    border-bottom: 3px solid #FAFAFA;
+}
+
+.highlight {
+    color: #FAFAFA;
+    border-bottom: 3px solid #FAFAFA;
+}
+
+/* -----------------------------First Screen--------------------------- */
+
+/* .first_screen {
+    height: 908px;
+    background: url(/assets/images/start-screen-gradient-background.png);
+}
+
+.first_screen_content {
+    position: relative;
+    width: 1200px;
+    height: 728px;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: bottom;
+    top: 120px;
+    display: flex;
+}
+
+.first_screen_text {
+    position: relative;
+    top: 163px;
+}
+
+.first_screen_text h2 {
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin-bottom: 42px;
+}
+
+.first_screen_text p {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 160%;
+    color: #CDCDCD;
+    margin-bottom: 41px;
+}
+
+.first_screen_text button {
+    width: 207px;
+    height: 52px;
+    background: #F1CDB3;
+    border-radius: 100px;
+    border: none;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+}
+
+.first_screen_content img {
+    position: relative;
+    left: 43px;
+} */
+
+/* -------------------------About----------------------------------- */
+
+/* .about {
+    height: 588px;
+    padding-top: 80px;
+}
+
+.about_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.about_content img {
+    margin-right: 60px;
+}
+
+.about_text {
+    width: 430px;
+    height: 380px;
+    margin-left: 60px;
+    margin-top: 14px;    
+}
+
+.about_text h2 {
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+.about_text p {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 160%;
+    color: #4C4C4C;
+    margin-top: 25px;
+} */
+
+/* -----------------------Pets-------------------------------- */
+
+/* .pets {
+    width: 877px;
+} */
